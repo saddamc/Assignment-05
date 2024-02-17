@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P-Ticket</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/69851e38e3.js" crossorigin="anonymous"></script>
+
+    <!-- tailwind custom classes -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        // clifford: '#da373d',
+                        // new: '#665e5e6',
+                        // old: '#424247',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- custom styles -->
+    <style>
+       .raleway {
+    font-family: "Raleway", sans-serif;
+}
+    </style>
+
+
+</head>
+
+<body class="raleway">
+    <!-- navbar  -->
+    <header class="max-w-[1200px] my-auto mx-auto">
+        <nav class="container mx-auto  lg:px-24 px:8 my-12">
+            <div class="navbar bg-base-100 grid-cols-1">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 text-[#424247] rounded-box w-52  hover:text-green-700">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Destination</a></li>
+                                <li><a href="#">Search</a></li>
+
+                            </ul>
+                    </div>
+                    <h3 class="text-4xl text-[#131318] font-extrabold">P-Ticket</h3>
+                </div>
+                <div class="navbar-center opacity-80 hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-[#424247] hover:text-green-700">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Destination</a></li>
+                        <li><a href="#">Search</a></li>
+
+                    </ul>
+                </div>
+                <div class="navbar-end ">
+
+                    <button
+                        class="w-[130px] h-[56px] font-semibold text-[#36D61D] bg-[#E8FAE6] border border-[#36D61D] rounded-lg text-xl ml-4 flex justify-center items-center">Bus
+                        <img class="w-6 h-6 ml-2" src="./Images/bus-icon.png" alt="">
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <!-- header background image -->
+        <div class=" mx-auto px-6 lg:px24 ">
+            <div class="w-full">
+                <div 
+                    class=" w-full bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url(./Images/banner.png)] bg-no-repeat h-[550px] flex justify-center text-center bg-center bg-cover rounded-2xl">
+                    <div class="space-y-4">
+                        <h1 class="mt-24 text-6xl text-white font-extrabold">End-to-End Travel with</h1>
+                        <h1 class="text-6xl text-[#1DD100] font-extrabold">P Paribahan</h1>
+                        <p class="text-white mx-24">Yes, you can run unit tests and view the results directly within the app. The <br>integrated testing features allow for a streamlined .</p>
+                        <button class="btn text-xl font-bold bg-[#1DD100] border-none text-[#030712] ">Buy Tickets</button>
+                    </div>
+                           
+                </div>
+                
+
+            </div>
+        </div>
+        <!-- Follower section -->
+        <div
+            class="flex lg:w-[750px] lg:h-[150px] text-black rounded-2xl p-6 space-y-4 lg:-translate-y-16">
+            <div class="">
+                <img src="./Images/people.png" alt="">
+                <div>
+                    <h2>500K+</h2>
+                    <h4>Registered users</h4>
+                </div>
+
+            </div>
+        </div>
+    </header>
