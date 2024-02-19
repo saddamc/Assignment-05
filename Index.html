@@ -15,6 +15,7 @@
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/69851e38e3.js" crossorigin="anonymous"></script>
 
+
     <!-- tailwind custom classes -->
     <script>
         tailwind.config = {
@@ -110,7 +111,7 @@
         </div>
         <!-- Follower section -->
         <div
-            class="flex gap-6 text-black justify-center items-center space-y-4 lg:-translate-y-14">
+            class=" lg:flex gap-6 text-black justify-center items-center space-y-4 lg:-translate-y-14">
             <!-- chat-1 -->
             <div class="inter flex gap-2 bg-white rounded-xl p-6 shadow-sm shadow-[#329622]">
                 <div>
@@ -149,15 +150,15 @@
     <main>
         <section class="max-w-[1200px] mx-auto mb-5">
             <h1 class="text-4xl font-bold justify-center text-center my-12">Best offer for you</h1>
-           <div class="flex gap-4">
+           <div class="lg:flex gap-4 lg:mb-4">
             <div class="flex ">
-                <div class="inter p-10 space-y-1 bg-[#FFBF0F] rounded-l-2xl pr-16">
+                <div class="inter p-10 space-y-1 bg-[#FFBF0F] rounded-l-2xl pr-4 lg:pr-16">
                     <h2 class="text-4xl font-bold">15% OFF</h2>
                     <h3 class="text-xl font-semibold opacity-80">on your next purchase</h3>
                     <p class="text-lg font-medium opacity-50">use by January 2024</p>
                 </div>
                 <div class="p-10 sapce-y-1 pl-12 bg-[#FFBF0F] rounded-r-2xl border-l-2 border-dashed border-white">
-                    <h2 class="text-3xl font-bold">NEW15</h2>
+                    <h2 id="coupon-15" class="text-3xl font-bold">NEW15</h2>
                     <p class="text-lg font-medium opacity-40">Coupon Code</p>
 
                 </div>
@@ -169,7 +170,7 @@
                     <p class="text-lg font-medium opacity-50">use by January 2024</p>
                 </div>
                 <div class="p-10 sapce-y-1 pl-12 bg-[#F78C9C] rounded-r-2xl border-l-2 border-dashed border-white">
-                    <h2 class="text-3xl font-bold">Couple 20</h2>
+                    <h2 id="coupon-20" class="text-3xl font-bold">Couple 20</h2>
                     <p class="text-lg font-medium opacity-40">Coupon Code</p>
 
                 </div>
@@ -185,10 +186,10 @@
                 <h1 class="text-4xl font-bold">P.H Paribahan</h1>
                 <p class="inter text-lg">Yes, you can unit tests and view the results directly within the app. The integrated <br>testing features allow for a streamlined</p>
             </div>
-            <div class="mt-12 bg-white p-4 rounded-xl flex">
-                <div class="grid grid-cols-3">
+            <div class="mt-12 bg-white p-4 rounded-xl lg:flex">
+                <div class="grid lg:grid-cols-3">
                     <!-- 1 -->
-                    <div class="flex justify-between text-center items-center col-span-3">
+                    <div class="flex justify-between text-center items-center lg:col-span-3">
                         <div class="flex gap-4 p-8">
                             <img class="w-18 h-12" src="./Images/bus-logo.png" alt="">
                             <div>
@@ -198,11 +199,11 @@
                         </div>
                         <div class="flex gap-2 bg-[#DDF8D8] p-3 rounded-md">
                             <img class="w-7 h-7" src="./Images/seat-green.png" alt="">
-                            <h3 class="text-[#329622]  text-lg font-medium">40 Seats left</h3>
+                            <h3 id="seat-left" class="text-[#329622]  text-lg font-medium">40 Seats left</h3>
                         </div>
                     </div>
                     <!-- 2 -->
-                    <div class="flex justify-between text-center items-center col-span-3  rounded-t-xl bg-slate-100 p-4 border-b-2 border-dashed ">
+                    <div class="flex justify-between text-center items-center lg:col-span-3  rounded-t-xl bg-slate-100 p-4 border-b-2 border-dashed ">
                         <div class="">
                             <h3 class="text-lg font-semibold">Route</h3>
                         </div>
@@ -211,7 +212,7 @@
                         </div>
                     </div>
                       <!-- 3 -->
-                    <div class="flex justify-between text-center items-center col-span-3  bg-slate-100 p-4 border-b-2 border-dashed">
+                    <div class="flex justify-between text-center items-center lg:col-span-3  bg-slate-100 p-4 border-b-2 border-dashed">
                         <div class="">
                             <h3 class="text-lg font-semibold">Departure Time</h3>
                         </div>
@@ -220,7 +221,7 @@
                         </div>
                     </div>
                     <!-- 4 -->
-                    <div class="text-center items-center col-span-3 bg-slate-100 p-4 rounded-b-xl">
+                    <div class="text-center items-center lg:col-span-3 bg-slate-100 p-4 rounded-b-xl">
                         <div class="flex gap-8 justify-center">
                             <h3 class="text-sm font-bold bg-slate-200 p-4 rounded-xl">Boarding Point - Laxmipur</h3>
                             <h3 class="text-sm font-bold bg-slate-200 p-4 rounded-xl">Dropping - Bogura</h3>
@@ -246,7 +247,7 @@
                         <!-- 1 -->
                         <div class="flex justify-between text-center items-center  rounded-t-xl  p-2 px-6 border-b-2 border-dashed ">
                             <div class=" gap-2 p-3 ">
-                                <h3 class="text-2xl font-semibold">Select Your Seal</h3>
+                                <h3 class="text-2xl font-semibold">Select Your Seat</h3>
                             </div>
                        
                         </div>
@@ -273,65 +274,65 @@
                     <!-- seat number -->
                     <div class="inter">
                         <div class="flex">
-                            <div class="grid py-4 pr-0 gap-4 text-lg font-medium">
-                                <kbd id="" class="p-4 pl-10">A</kbd>
-                                <kbd id="" class="p-4 pl-10">B</kbd>
-                                <kbd id="" class="p-4 pl-10">C</kbd>
-                                <kbd id="" class="p-4 pl-10">D</kbd>
-                                <kbd id="" class="p-4 pl-10">E</kbd>
-                                <kbd id="" class="p-4 pl-10">F</kbd>
-                                <kbd id="" class="p-4 pl-10">G</kbd>
-                                <kbd id="" class="p-4 pl-10">H</kbd>
-                                <kbd id="" class="p-4 pl-10">I</kbd>
-                                <kbd id="" class="p-4 pl-10">J</kbd>   
-                            </div>
-l                           <div class="grid p-4 gap-4 text-lg font-medium">
-                                <kbd id="" class="bg-slate-200 p-4 px-10 rounded-md">A1</kbd>
-                                <kbd id="" class="bg-slate-200 p-4 px-10 rounded-md">B1</kbd>
-                                <kbd id="" class="bg-slate-200 p-4 px-10 rounded-md">C1</kbd>
-                                <kbd id="" class="bg-slate-200 p-4 px-10 rounded-md">D1</kbd>
-                                <kbd id="" class="bg-slate-200 p-4 px-10 rounded-md">E1</kbd>
-                                <kbd id="" class="bg-slate-200 p-4 px-10 rounded-md">F1</kbd>
-                                <kbd id="" class="bg-slate-200 p-4 px-10 rounded-md">G1</kbd>
-                                <kbd id="" class="bg-slate-200 p-4 px-10 rounded-md">H1</kbd>
-                                <kbd id="" class="bg-slate-200 p-4 px-10 rounded-md">I1</kbd>
-                                <kbd id="" class="bg-slate-200 p-4 px-10 rounded-md">J1</kbd>   
+                            <div class="grid py-4 pr-0 gap-1 lg:gap-4 text-lg font-medium">
+                                <kbd id="" onclick="handleClick(event)" class="fake-seat-btn">A</kbd>
+                                <kbd id="" onclick="handleClick(event)" class="fake-seat-btn">B</kbd>
+                                <kbd id="" onclick="handleClick(event)" class="fake-seat-btn">C</kbd>
+                                <kbd id="" onclick="handleClick(event)" class="fake-seat-btn">D</kbd>
+                                <kbd id="" onclick="handleClick(event)" class="fake-seat-btn">E</kbd>
+                                <kbd id="" onclick="handleClick(event)" class="fake-seat-btn">F</kbd>
+                                <kbd id="" onclick="handleClick(event)" class="fake-seat-btn">G</kbd>
+                                <kbd id="" onclick="handleClick(event)" class="fake-seat-btn">H</kbd>
+                                <kbd id="" onclick="handleClick(event)" class="fake-seat-btn">I</kbd>
+                                <kbd id="" onclick="handleClick(event)" class="fake-seat-btn">J</kbd>   
                             </div>
                             <div class="grid p-4 gap-4 text-lg font-medium">
-                                <kbd id="" class="bg-slate-200 p-4 px-10 rounded-md">A2</kbd>
-                                <kbd id="" class="bg-slate-200 p-4 px-10 rounded-md">B2</kbd>
-                                <kbd id="" class="bg-slate-200 p-4 px-10 rounded-md">C2</kbd>
-                                <kbd id="" class="bg-slate-200 p-4 px-10 rounded-md">D2</kbd>
-                                <kbd id="" class="bg-slate-200 p-4 px-10 rounded-md">E2</kbd>
-                                <kbd id="" class="bg-slate-200 p-4 px-10 rounded-md">F2</kbd>
-                                <kbd id="" class="bg-slate-200 p-4 px-10 rounded-md">G2</kbd>
-                                <kbd id="" class="bg-slate-200 p-4 px-10 rounded-md">H2</kbd>
-                                <kbd id="" class="bg-slate-200 p-4 px-10 rounded-md">I2</kbd>
-                                <kbd id="" class="bg-slate-200 p-4 px-10 rounded-md">J2</kbd>   
+                                <kbd id="A1" onclick="handleClick(event)" class="seat-btn">A1</kbd>
+                                <kbd id="B1" onclick="handleClick(event)" class="seat-btn">B1</kbd>
+                                <kbd id="C1" onclick="handleClick(event)" class="seat-btn">C1</kbd>
+                                <kbd id="D1" onclick="handleClick(event)" class="seat-btn">D1</kbd>
+                                <kbd id="E1" onclick="handleClick(event)" class="seat-btn">E1</kbd>
+                                <kbd id="F1" onclick="handleClick(event)" class="seat-btn">F1</kbd>
+                                <kbd id="G1" onclick="handleClick(event)" class="seat-btn">G1</kbd>
+                                <kbd id="H1" onclick="handleClick(event)" class="seat-btn">H1</kbd>
+                                <kbd id="I1" onclick="handleClick(event)" class="seat-btn">I1</kbd>
+                                <kbd id="J1" onclick="handleClick(event)" class="seat-btn">J1</kbd>   
+                            </div>
+                            <div class="grid p-4 gap-4 text-lg font-medium">
+                                <kbd id="A2" onclick="handleClick(event)" class="seat-btn">A2</kbd>
+                                <kbd id="B2" onclick="handleClick(event)" class="seat-btn">B2</kbd>
+                                <kbd id="C2" onclick="handleClick(event)" class="seat-btn">C2</kbd>
+                                <kbd id="D2" onclick="handleClick(event)" class="seat-btn">D2</kbd>
+                                <kbd id="E2" onclick="handleClick(event)" class="seat-btn">E2</kbd>
+                                <kbd id="F2" onclick="handleClick(event)" class="seat-btn">F2</kbd>
+                                <kbd id="G2" onclick="handleClick(event)" class="seat-btn">G2</kbd>
+                                <kbd id="H2" onclick="handleClick(event)" class="seat-btn">H2</kbd>
+                                <kbd id="I2" onclick="handleClick(event)" class="seat-btn">I2</kbd>
+                                <kbd id="J2" onclick="handleClick(event)" class="seat-btn">J2</kbd>   
                             </div>
                             <div class="grid p-4 gap-4 text-lg font-medium ml-12">
-                                <kbd id="" class="bg-slate-200 p-4 px-10 rounded-md">A3</kbd>
-                                <kbd id="" class="bg-slate-200 p-4 px-10 rounded-md">B3</kbd>
-                                <kbd id="" class="bg-slate-200 p-4 px-10 rounded-md">C3</kbd>
-                                <kbd id="" class="bg-slate-200 p-4 px-10 rounded-md">D3</kbd>
-                                <kbd id="" class="bg-slate-200 p-4 px-10 rounded-md">E3</kbd>
-                                <kbd id="" class="bg-slate-200 p-4 px-10 rounded-md">F3</kbd>
-                                <kbd id="" class="bg-slate-200 p-4 px-10 rounded-md">G3</kbd>
-                                <kbd id="" class="bg-slate-200 p-4 px-10 rounded-md">H3</kbd>
-                                <kbd id="" class="bg-slate-200 p-4 px-10 rounded-md">I3</kbd>
-                                <kbd id="" class="bg-slate-200 p-4 px-10 rounded-md">J3</kbd>   
+                                <kbd id="A3" onclick="handleClick(event)" class="seat-btn">A3</kbd>
+                                <kbd id="B3" onclick="handleClick(event)" class="seat-btn">B3</kbd>
+                                <kbd id="C3" onclick="handleClick(event)" class="seat-btn">C3</kbd>
+                                <kbd id="D3" onclick="handleClick(event)" class="seat-btn">D3</kbd>
+                                <kbd id="E3" onclick="handleClick(event)" class="seat-btn">E3</kbd>
+                                <kbd id="F3" onclick="handleClick(event)" class="seat-btn">F3</kbd>
+                                <kbd id="G3" onclick="handleClick(event)" class="seat-btn">G3</kbd>
+                                <kbd id="H3" onclick="handleClick(event)" class="seat-btn">H3</kbd>
+                                <kbd id="I3" onclick="handleClick(event)" class="seat-btn">I3</kbd>
+                                <kbd id="J3" onclick="handleClick(event)" class="seat-btn">J3</kbd>   
                             </div>
                             <div class="grid p-4 gap-4 text-lg font-medium">
-                                <kbd id="" class="bg-slate-200 p-4 px-10 rounded-md">A4</kbd>
-                                <kbd id="" class="bg-slate-200 p-4 px-10 rounded-md">B4</kbd>
-                                <kbd id="" class="bg-slate-200 p-4 px-10 rounded-md">C4</kbd>
-                                <kbd id="" class="bg-slate-200 p-4 px-10 rounded-md">D4</kbd>
-                                <kbd id="" class="bg-slate-200 p-4 px-10 rounded-md">E4</kbd>
-                                <kbd id="" class="bg-slate-200 p-4 px-10 rounded-md">F4</kbd>
-                                <kbd id="" class="bg-slate-200 p-4 px-10 rounded-md">G4</kbd>
-                                <kbd id="" class="bg-slate-200 p-4 px-10 rounded-md">H4</kbd>
-                                <kbd id="" class="bg-slate-200 p-4 px-10 rounded-md">I4</kbd>
-                                <kbd id="" class="bg-slate-200 p-4 px-10 rounded-md">J4</kbd>   
+                                <kbd id="A4" onclick="handleClick(event)" class="seat-btn">A4</kbd>
+                                <kbd id="B4" onclick="handleClick(event)" class="seat-btn">B4</kbd>
+                                <kbd id="C4" onclick="handleClick(event)" class="seat-btn">C4</kbd>
+                                <kbd id="D4" onclick="handleClick(event)" class="seat-btn">D4</kbd>
+                                <kbd id="E4" onclick="handleClick(event)" class="seat-btn">E4</kbd>
+                                <kbd id="F4" onclick="handleClick(event)" class="seat-btn">F4</kbd>
+                                <kbd id="G4" onclick="handleClick(event)" class="seat-btn">G4</kbd>
+                                <kbd id="H4" onclick="handleClick(event)" class="seat-btn">H4</kbd>
+                                <kbd id="I4" onclick="handleClick(event)" class="seat-btn">I4</kbd>
+                                <kbd id="J4" onclick="handleClick(event)" class="seat-btn">J4</kbd>   
                             </div>
                         </div>
     
@@ -339,55 +340,50 @@ l                           <div class="grid p-4 gap-4 text-lg font-medium">
                 </div>
                 <!-- price area -->
                 <div class="w-[450px]">
-                    <div class="flex justify-between text-center items-center  rounded-t-xl  p-2 pl-6 pt-6 border-b-2 border-dashed ">
+                    <div class="lg:flex justify-between text-center items-center  rounded-t-xl  p-2 pl-6 pt-6 border-b-2 border-dashed ">
                         <div class=" gap-2 p-3 ">
-                            <h3 class="text-2xl font-semibold">Select Your Seal</h3>
+                            <h3 class="text-2xl font-semibold">Your Selected Seat</h3>
                         </div>
                     </div>
                     <!--ticket price area -->
                    <div class="bg-slate-100 rounded-lg px-4 mx-4">
-                    <div class="inter flex  justify-between  font-medium m-6 p-4 border-b-2 border-dashed">
-                        <h3>Seat <span class="bg-[#329622] text-white px-2 rounded-xl">0</span></h3>
+                    <div class="inter flex  justify-between  font-medium m-6 p-4 border-b-2 border-[#f2eeee] border-dashed">
+                        <h3>Seat <span id="seat-count" class="bg-[#329622] text-white px-2 rounded-xl">0</span></h3>
                         <h3>Class</h3>
                         <h3>Price</h3>
                     </div>
-                    <div class="inter flex  justify-between m-6 p-4">
-                        <h3>C2 </h3>
-                        <h3>Economy</h3>
-                        <h3>550</h3>
+                    <div id="booking-seat" class=" inter justify-between m-6 p-4">
+                        <ul id="selected-place-container" class="selected-place-container">
+
+                        </ul>
                     </div>
-                    <div class="inter flex border-b-2 justify-between  m-6 p-4">
-                        <h3>C2 </h3>
-                        <h3>Economy</h3>
-                        <h3>550</h3>
-                    </div>
-                    <div class="inter flex border-b-2 justify-between  font-medium m-6 p-4">
+                    <div id="" class="inter flex border-b-2 justify-between  font-medium m-6 p-4">
                         <h3>Total Price </h3>
-                        <h3>BDT 550</h3>
+                        <h3 id="total-price"></h3>
                     </div>
                     <div class="inter flex border-b-2 justify-between  font-medium m-6 p-4">
                         
                         <label class="input  flex items-center gap-2">
                             <input type="text" class="grow" placeholder="Have any coupon" />
-                            <button class="btn bg-[#329622] h-[28px] text-white rounded-xl">Apply</button>
+                            <button id="apply-coupon" class="btn bg-[#329622] h-[28px] text-white rounded-xl">Apply</button>
                           </label>
                     </div>
-                    <div class="inter flex justify-between  font-medium m-6 p-4">
+                    <div id="total-seal-count" class="inter flex justify-between  font-medium m-6 p-4">
                         <h3>Grand Total </h3>
-                        <h3>BDT 550</h3>
+                        <h3 id="grand-total-price"></h3>
                     </div>
 
                    </div>
                    <!-- name -->
                 <div class="font-semibold inter ml-4 ">
-                    <h3 class="mb-2">Passenger Name <span class="text-red-500">*</span></h3>
+                    <h3 id="passenger-name" class="mb-2">Passenger Name <span class="text-red-500">*</span></h3>
                     <input class="p-4 border-2 w-[400px] rounded-xl" type="text" placeholder="Enter your name">
-                    <h3 class="mb-2">Phone Number <span class="text-red-500">*</span></h3>
+                    <h3 id="phone-number" class="mb-2">Phone Number <span class="text-red-500">*</span></h3>
                     <input class="p-4 border-2 w-[400px] rounded-xl" type="text" placeholder="Enter your phone number">
                     <h3 class="mb-2">Email ID </h3>
                     <input class="p-4 border-2 w-[400px] rounded-xl" type="text" placeholder="Enter your email Id">
 
-                    <button class="btn text-white bg-[#329622] w-[400px] my-4 rounded-xl">Next</button>
+                    <button id="apply-next"  class="btn text-white bg-[#329622] w-[400px] my-4 rounded-xl">Next</button>
 
                     <ul class="flex gap-10">
                         <li class="border-b-2 border-b-neutral-500">Terms and Conditions</li>
@@ -406,7 +402,7 @@ l                           <div class="grid p-4 gap-4 text-lg font-medium">
          <section class=" hidden justify-center text-center m-10 p-24 bg-slate-200 Raleway mx-auto my-auto min-h-[700px]">
             <div class="bg-white w-[700px] space-y-6 rounded-md p-12 justify-center mx-auto">
                 <img class="mx-auto" src="./Images/success.png" alt="">
-                <h3 class="text-2xl font-bold text-[#329622] ">SUCCESS</h3>
+                <h3 id="apply-success" class="text-2xl font-bold text-[#329622] ">SUCCESS</h3>
                 <h4 class="text-xl font-medium">Thank you for Booking Our Bus Seats. <br> 
                 We are working hard to find the best service and deals for you.</h4>
                 <p class="text-lg opacity-80">Shorty you will find a confirmation in your email.</p>
@@ -452,4 +448,6 @@ l                           <div class="grid p-4 gap-4 text-lg font-medium">
         </div>
 
     </footer>
+    <script src="scripts/ticket.js"></script>
+    <script src="scripts/seal.js"></script>
 </body>
