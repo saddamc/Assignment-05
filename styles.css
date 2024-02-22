@@ -9,6 +9,12 @@
     margin-left: 10px;
 }
 
+li {
+    display: flex;
+}
+
+
+
 .fake-seat-btn {
     padding: 16px;
     padding-left: 40px;
@@ -23,6 +29,7 @@
 }
 
 .selected {
-    background-color: #329622; /* Change to your desired background color */
-    color: #fff; /* Change text color to ensure visibility */
+    background-color: #329622; 
+    color: #fff; 
 }
+

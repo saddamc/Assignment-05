@@ -46,11 +46,11 @@ function updateSelectedSeats(seat, isSelected) {
         selectedSeatsList.appendChild(price);
     } else {
         const selectedSeat = selectedSeatsList.querySelector(`li:contains(${seat})`);
-        selectedSeat.remove();
+        selectedSeat.remove('seat');
     }
 
   
-    if (seatCount >= 2 && seatCount <= 4) {
+    if (seatCount <= 4) {
         activateCoupon("NEW15");
     } else if (seatCount > 4) {
         activateCoupon("Coupon 20");
@@ -75,7 +75,7 @@ document.getElementById('apply-coupon').addEventListener('click', function (even
     const couponCode = couponInput.value.trim();
 });
 
-document.getElementById('apply-next').addEventListener('click', function () {
+document.getElementById('apply-next').addEventListener('click', function (event) {
     const passengerName = document.getElementById('passenger-name').value.trim();
     const phoneNumber = document.getElementById('phone-number').value.trim();
     if (passengerName === '' || phoneNumber === '') {
@@ -84,3 +84,8 @@ document.getElementById('apply-next').addEventListener('click', function () {
         document.querySelector('.hidden').classList.remove('hidden');
     }
 });
+
+
+
+
+
